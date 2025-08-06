@@ -4,7 +4,7 @@ pipeline {
     stages{
         stage ("Build") {
             steps {
-                echo "This is build stage"
+                echo "This is build stage branch 2"
                 echo "Code is Building"
             }
         }
@@ -12,7 +12,7 @@ pipeline {
 			parallel {
 				stage ("Unit Test") {
 					steps {
-						echo "This is test stage"
+						echo "This is test stage branch 2"
 						echo "Unit Testing in progress"
 						echo "Unit Testing completed"
 					}
@@ -21,7 +21,7 @@ pipeline {
 				stage ("Regression Test") {
 					
 					steps {
-						echo "This is regression test stage"
+						echo "This is regression test stage branch 2"
 						echo "Regression Testing in progress"
 						echo "Regression Testing completed"
 					}
@@ -30,7 +30,7 @@ pipeline {
 		}
         stage ("Deploy") {
             steps {
-                echo "This is deploy stage"
+                echo "This is deploy stage branch 2"
             }
         }
     }
