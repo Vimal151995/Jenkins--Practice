@@ -1,7 +1,8 @@
 pipeline {
-    agent {
-		label "TestNode"
-	}
+    agent any
+	// {
+	// 	label "TestNode"
+	// }
 	
     
     stages{
